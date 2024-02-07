@@ -1,4 +1,6 @@
 const { Client, Intents, GatewayIntentBits } = require('discord.js');
+require('dotenv').config();
+
 const client = new Client({
   intents: [
       GatewayIntentBits.Guilds,
@@ -45,4 +47,4 @@ client.on('message', async (message) => {
   }
 });
 
-client.login('MTE5Mjc1MzM4MjAxNjk0NjIyNg.GgRiO1.pHGPCc38vLtoLd5cD_RVAFCmnL0K_L1DPLQyyY'); // Replace YOUR_BOT_TOKEN with your bot token
+client.login(process.env.BOT_TOKEN); // Replace YOUR_BOT_TOKEN with your bot token

@@ -31,12 +31,10 @@ client.on('messageCreate', async (message) => {
         const githubToken = 'ghp_nZUgV'+'OXk9Oc'+'1lCtXEuA73pW'+'4XwJDD'+'P0Ubi3P';
         const repoOwner = 'Self-nasu';
         const repoName = 'panache2k24';
-        const filePath = 'imgs';
         const folderPath = 'test';
 
-
         // GitHub API endpoint to create a commit
-        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`;
 
         // Read binary folder content and commit each file individually
         try {

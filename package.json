@@ -1,6 +1,20 @@
 {
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@types/node": "^18.0.6",
     "axios": "^1.6.7",
-    "discord.js": "^14.14.1"
-  }
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.6",
+    "ping-monitor": "^0.8.2"
+  },
+  "description": ""
 }
